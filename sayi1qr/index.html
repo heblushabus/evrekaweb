@@ -14,12 +14,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: black; /* Optional: adds black background */
       }
       #vid {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
+        width: 100%; /* Make video fill the width */
+        height: 100%; /* Make video fill the height */
+        object-fit: contain; /* This maintains aspect ratio while maximizing size */
       }
     </style>
   </head>
