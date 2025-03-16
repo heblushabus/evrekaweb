@@ -1402,6 +1402,13 @@ html {
   }
   
   @media screen and (max-width: 767px) {
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 5 eşit sütun */
+      grid-gap: 10px; /* İsteğe bağlı: Öğeler arası boşluk */
+      justify-items: center; /* Öğeleri yatayda ortala */
+    }
     .w-nav-brand {
       padding-left: 10px;
     }
@@ -3254,26 +3261,16 @@ html {
       width: 100%;
       height: auto;
       max-height: none;
+      max-width: 12rem;
     }
   
     .grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr); /* 5 eşit sütun */
+      grid-template-columns: repeat(4, 1fr); /* 5 eşit sütun */
       grid-gap: 10px; /* İsteğe bağlı: Öğeler arası boşluk */
       justify-items: center; /* Öğeleri yatayda ortala */
     }
     
-    .team-card:nth-child(n+6) { /* 6. ve sonraki öğeler için */
-      grid-column: 2 / span 1; /* 2. sütundan başla ve 1 sütun kapla */
-    }
-    
-    .team-card:nth-child(8) { /* Son öğe için */
-      grid-column: 3 / span 1; /* 3. sütundan başla ve 1 sütun kapla (ortala) */
-    }
-    
-    .team-card:nth-child(7) { /* Sondan bir önceki öğe için */
-        grid-column: 1/ span 1;
-    }
     
     .team-card:last-child {
       grid-column: 3 / span 1;
@@ -3282,6 +3279,14 @@ html {
   }
   
   @media screen and (max-width: 991px) {
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 5 eşit sütun */
+      grid-gap: 10px; /* İsteğe bağlı: Öğeler arası boşluk */
+      justify-items: center; /* Öğeleri yatayda ortala */
+    }
+    
     .section.cc-cta {
       padding-left: 0;
       padding-right: 0;
@@ -3492,11 +3497,18 @@ html {
     }
   
     .grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns:  1fr 1fr;
     }
   }
   
   @media screen and (max-width: 767px) {
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 5 eşit sütun */
+      grid-gap: 10px; /* İsteğe bağlı: Öğeler arası boşluk */
+      justify-items: center; /* Öğeleri yatayda ortala */
+    }
     .section {
       margin-left: 15px;
       margin-right: 15px;
@@ -3669,6 +3681,13 @@ html {
   }
   
   @media screen and (max-width: 479px) {
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 5 eşit sütun */
+      grid-gap: 10px; /* İsteğe bağlı: Öğeler arası boşluk */
+      justify-items: center; /* Öğeleri yatayda ortala */
+    }
     h1 {
       font-size: 36px;
       line-height: 52px;
