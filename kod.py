@@ -30,7 +30,7 @@ def html_to_txt(json_file, txt_file):
                 # HTML benzeri yapıyı oluştur
                 f.write(f' <div id="w-node-cc1d5f45-7cd3-ef8d-f564-be9772f86680-18054bdb" class="team-card"><img src="img/{isim['id']}.webp" loading="lazy" sizes="100vw" alt="" class="team-member-image" />\n')
                 f.write(f'    <div class="team-member-name-2">{isim['isim'].upper()} {isim['soyisim'].upper()}</div>\n')
-                f.write(f'    <p>{aciklama} </p>\n')
+                f.write(f'    <p>"{aciklama}" Yazarı </p>\n')
                 f.write('</div>\n')
                 f.write('\n')  # Her bir kart arasına boşluk bırak
 
